@@ -1,10 +1,12 @@
+import React from 'react';
 import { TodoCounter } from './TodoCounter';
 import { TodoSearch } from './TodoSearch';
 import { TodoList } from './TodoList';
 import { TodoItem } from './TodoItem';
 import { CreateTodoButton } from './CreateTodoButton';
-import React from 'react';
-import './App.css';
+import './index.css'
+
+
 
 const defaultTodos=[
   {text: 'banar a abrry', completed:true},
@@ -14,7 +16,7 @@ const defaultTodos=[
 
 function App() { //componente de react
   return (
-    <React.Fragment>
+    <>
       <TodoCounter completed={2} total={5}/>
       <TodoSearch/>
 
@@ -30,7 +32,7 @@ function App() { //componente de react
 
       <CreateTodoButton/>
       
-      </React.Fragment>
+      </>
   );
 }
 
